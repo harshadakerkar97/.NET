@@ -8,7 +8,7 @@ namespace Employee
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Employee o1 = new Employee("Amol", 123465, 10);
             Employee o2 = new Employee("Amol", 123465);
@@ -31,6 +31,8 @@ namespace Employee
     class Employee
     {
         private static int count;
+
+        #region properties
         private string name;
         public string Name
         {
@@ -52,8 +54,21 @@ namespace Employee
             }
         }
         private int empNo;
+        //read only property
+        /*public int EmpNo
+        {
+            get
+            {
+                return empNo;
+            }
+        } */
+
         public int EmpNo
         {
+            private set             //property access specifier 
+            {
+                empNo = value;
+            }
             get
             {
                 return empNo;
@@ -90,6 +105,10 @@ namespace Employee
                 }
             }
         }
+        #endregion
+
+        #region using overloaded constructor
+        /*
         public Employee(string name,decimal basic,short deptNo)
         {
             Name = name;
@@ -118,7 +137,19 @@ namespace Employee
             empNo = ++count;
             Console.WriteLine("no param constructor....");
         }
+        */
+        #endregion
 
+        #region using default values to constructor
+        public Employee(string name="null", decimal basic=10000, short deptNo=10)
+        {
+            Name = name;
+            Basic = basic;
+            DeptNo = deptNo;
+            EmpNo = ++count;
+            Console.WriteLine("no->" + empNo);
+        }
+        #endregion
         public decimal GetNetSalary()
         {
             return basic + 1200;

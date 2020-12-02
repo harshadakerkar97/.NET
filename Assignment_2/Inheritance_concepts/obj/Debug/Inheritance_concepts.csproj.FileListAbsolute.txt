@@ -1,0 +1,7 @@
+H:\.Net\.NET\Assignment_2\Inheritance_concepts\bin\Debug\Inheritance_concepts.exe.config
+H:\.Net\.NET\Assignment_2\Inheritance_concepts\bin\Debug\Inheritance_concepts.exe
+H:\.Net\.NET\Assignment_2\Inheritance_concepts\bin\Debug\Inheritance_concepts.pdb
+H:\.Net\.NET\Assignment_2\Inheritance_concepts\obj\Debug\Inheritance_concepts.csprojAssemblyReference.cache
+H:\.Net\.NET\Assignment_2\Inheritance_concepts\obj\Debug\Inheritance_concepts.csproj.CoreCompileInputs.cache
+H:\.Net\.NET\Assignment_2\Inheritance_concepts\obj\Debug\Inheritance_concepts.exe
+H:\.Net\.NET\Assignment_2\Inheritance_concepts\obj\Debug\Inheritance_concepts.pdb
