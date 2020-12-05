@@ -1,0 +1,7 @@
+H:\.Net\.NET\Assignment_2\Inheritance_in_interface\bin\Debug\Inheritance_in_interface.exe.config
+H:\.Net\.NET\Assignment_2\Inheritance_in_interface\bin\Debug\Inheritance_in_interface.exe
+H:\.Net\.NET\Assignment_2\Inheritance_in_interface\bin\Debug\Inheritance_in_interface.pdb
+H:\.Net\.NET\Assignment_2\Inheritance_in_interface\obj\Debug\Inheritance_in_interface.csprojAssemblyReference.cache
+H:\.Net\.NET\Assignment_2\Inheritance_in_interface\obj\Debug\Inheritance_in_interface.csproj.CoreCompileInputs.cache
+H:\.Net\.NET\Assignment_2\Inheritance_in_interface\obj\Debug\Inheritance_in_interface.exe
+H:\.Net\.NET\Assignment_2\Inheritance_in_interface\obj\Debug\Inheritance_in_interface.pdb

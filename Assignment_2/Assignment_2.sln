@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance_concepts", "Inheritance_concepts\Inheritance_concepts.csproj", "{53014F5C-83DD-412C-88FC-B1E5F8D5BE78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance_in_interface", "Inheritance_in_interface\Inheritance_in_interface.csproj", "{7C828B6B-1C6F-4F2E-A1C6-4BEE1080589A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{53014F5C-83DD-412C-88FC-B1E5F8D5BE78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53014F5C-83DD-412C-88FC-B1E5F8D5BE78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53014F5C-83DD-412C-88FC-B1E5F8D5BE78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C828B6B-1C6F-4F2E-A1C6-4BEE1080589A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C828B6B-1C6F-4F2E-A1C6-4BEE1080589A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C828B6B-1C6F-4F2E-A1C6-4BEE1080589A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C828B6B-1C6F-4F2E-A1C6-4BEE1080589A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

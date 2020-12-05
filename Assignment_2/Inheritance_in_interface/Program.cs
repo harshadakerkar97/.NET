@@ -4,23 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Inheritance_concepts
+namespace Inheritance_in_interface
 {
     class Program
     {
         static void Main(string[] args)
         {
             Employee e = new Manager();
-            Employee e1 = new Manager("amol", 10, 20000);
-            Employee e2 = new GeneralManager("ram", 11, 3000);
-            Employee e3 = new CEO("sham", 12, 500);
+            Manager e1 = new Manager("amol", 10, 20000);
+            GeneralManager e2 = new GeneralManager("ram", 11, 3000);
+            CEO e3 = new CEO("sham", 12, 500);
+
             //e.show();
-            //e1.show();
-            //e2.show();
-            //e3.show();
-            Console.WriteLine(e1);
-            Console.WriteLine(e2);
-            Console.WriteLine(e3);
+            e1.insert();
+            e2.insert();
+            e3.insert();
+            //Console.WriteLine(e1);
+            //Console.WriteLine(e2);
+            //Console.WriteLine(e3);
             Console.ReadLine();
 
         }
@@ -71,7 +72,7 @@ namespace Inheritance_concepts
         {
             set
             {
-                if(value > 0)
+                if (value > 0)
                 {
                     deptNo = value;
                 }
@@ -90,10 +91,10 @@ namespace Inheritance_concepts
 
         #region abstract Basic property
         public decimal basic;
-        public abstract decimal Basic { get;  set; }
+        public abstract decimal Basic { get; set; }
         #endregion
 
-        public Employee(string name="none", short deptNo=10,decimal basic=1001)
+        public Employee(string name = "none", short deptNo = 10, decimal basic = 1001)
         {
             EmpNo = ++count;
             Name = name;
@@ -116,7 +117,16 @@ namespace Inheritance_concepts
         }
     }
 
-    public class Manager : Employee
+    //Interface
+    public interface Interface1
+    {
+        void insert();
+        void delete();
+        void update();
+    }
+
+
+    public class Manager : Employee, Interface1
     {
         #region designation property
         private string designation;
@@ -139,11 +149,11 @@ namespace Inheritance_concepts
             }
         }
         #endregion
-        public override decimal Basic 
+        public override decimal Basic
         {
             set
             {
-                if(value > 1000 )
+                if (value > 1000)
                     basic = value;
                 else
                     Console.WriteLine("enter valid basic salary.....");
@@ -156,10 +166,10 @@ namespace Inheritance_concepts
 
         public override decimal CalcNetSalary()
         {
-            return Basic+1200;
+            return Basic + 1200;
         }
 
-        public Manager(string name,short deptNo,decimal basic=1001,string designation="none"):base(name,deptNo,basic)
+        public Manager(string name, short deptNo, decimal basic = 1001, string designation = "none") : base(name, deptNo, basic)
         {
             Designation = designation;
         }
@@ -174,11 +184,26 @@ namespace Inheritance_concepts
             Console.WriteLine("empName : " + Name);
             Console.WriteLine("dept no : " + DeptNo);
             Console.WriteLine("basic : " + Basic);
-            Console.WriteLine("designation : "+ Designation);
+            Console.WriteLine("designation : " + Designation);
         }
         public override string ToString()
         {
             return "data => " + EmpNo + " " + Name + " " + DeptNo + " " + Basic;
+        }
+
+        public virtual void insert()
+        {
+            Console.WriteLine("Manager insert method");
+        }
+
+        public virtual void delete()
+        {
+            Console.WriteLine("Manager delete method");
+        }
+
+        public virtual void update()
+        {
+            Console.WriteLine("Manager update method");
         }
     }
 
@@ -186,9 +211,9 @@ namespace Inheritance_concepts
     {
         public string Perks { get; set; }
 
-        public GeneralManager(string name, short deptNo, decimal basic = 1001, string designation = "none",string perks="none") : base(name,deptNo,basic,designation)
+        public GeneralManager(string name, short deptNo, decimal basic = 1001, string designation = "none", string perks = "none") : base(name, deptNo, basic, designation)
         {
-            Perks = perks;        
+            Perks = perks;
         }
 
         public GeneralManager()
@@ -208,9 +233,24 @@ namespace Inheritance_concepts
         {
             return "data => " + EmpNo + " " + Name + " " + DeptNo + " " + Basic;
         }
+
+        public new void insert()
+        {
+            Console.WriteLine("General Manager insert method");
+        }
+
+        public new void delete()
+        {
+            Console.WriteLine("General Manager delete method");
+        }
+
+        public new void update()
+        {
+            Console.WriteLine("General Manager update method");
+        }
     }
 
-    public class CEO : Employee
+    public class CEO : Employee,Interface1
     {
         public override decimal Basic
         {
@@ -237,7 +277,7 @@ namespace Inheritance_concepts
             Console.WriteLine("no param construct");
         }
 
-        public CEO(string name="none",short deptNo=10,decimal basic=1001) : base(name, deptNo, basic)
+        public CEO(string name = "none", short deptNo = 10, decimal basic = 1001) : base(name, deptNo, basic)
         {
             Console.WriteLine("ceo");
         }
@@ -248,11 +288,26 @@ namespace Inheritance_concepts
             Console.WriteLine("empName : " + Name);
             Console.WriteLine("dept no : " + DeptNo);
             Console.WriteLine("basic : " + Basic);
-            
+
         }
         public override string ToString()
         {
             return "data => " + EmpNo + " " + Name + " " + DeptNo + " " + Basic;
+        }
+
+        public void insert()
+        {
+            Console.WriteLine("CEO insert method");
+        }
+
+        public void delete()
+        {
+            Console.WriteLine("CEO delete method");
+        }
+
+        public void update()
+        {
+            Console.WriteLine("CEO update method");
         }
     }
 }
