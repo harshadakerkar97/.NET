@@ -1,0 +1,7 @@
+H:\.Net\.NET\Assignment-5\CollectionDemo\bin\Debug\CollectionDemo.exe.config
+H:\.Net\.NET\Assignment-5\CollectionDemo\bin\Debug\CollectionDemo.exe
+H:\.Net\.NET\Assignment-5\CollectionDemo\bin\Debug\CollectionDemo.pdb
+H:\.Net\.NET\Assignment-5\CollectionDemo\obj\Debug\CollectionDemo.csprojAssemblyReference.cache
+H:\.Net\.NET\Assignment-5\CollectionDemo\obj\Debug\CollectionDemo.csproj.CoreCompileInputs.cache
+H:\.Net\.NET\Assignment-5\CollectionDemo\obj\Debug\CollectionDemo.exe
+H:\.Net\.NET\Assignment-5\CollectionDemo\obj\Debug\CollectionDemo.pdb
