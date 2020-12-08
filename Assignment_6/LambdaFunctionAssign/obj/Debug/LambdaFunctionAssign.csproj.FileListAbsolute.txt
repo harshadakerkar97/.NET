@@ -1,0 +1,7 @@
+H:\.Net\.NET\Assignment_6\LambdaFunctionAssign\bin\Debug\LambdaFunctionAssign.exe.config
+H:\.Net\.NET\Assignment_6\LambdaFunctionAssign\bin\Debug\LambdaFunctionAssign.exe
+H:\.Net\.NET\Assignment_6\LambdaFunctionAssign\bin\Debug\LambdaFunctionAssign.pdb
+H:\.Net\.NET\Assignment_6\LambdaFunctionAssign\obj\Debug\LambdaFunctionAssign.csproj.CoreCompileInputs.cache
+H:\.Net\.NET\Assignment_6\LambdaFunctionAssign\obj\Debug\LambdaFunctionAssign.exe
+H:\.Net\.NET\Assignment_6\LambdaFunctionAssign\obj\Debug\LambdaFunctionAssign.pdb
+H:\.Net\.NET\Assignment_6\LambdaFunctionAssign\obj\Debug\LambdaFunctionAssign.csprojAssemblyReference.cache
